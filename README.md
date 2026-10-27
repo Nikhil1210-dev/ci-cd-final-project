@@ -20,21 +20,15 @@ This project implements a Continuous Integration and Continuous Delivery (CI/CD)
 ## Project Tasks
 
 ### 1. Continuous Integration with GitHub Actions
-
-The GitHub Actions workflow installs dependencies, runs flake8 linting, and executes unit tests using nose.
+Install dependencies, run flake8 linting, and execute unit tests using nose.
 
 ### 2. Continuous Delivery with Tekton
-
-The Tekton pipeline performs cleanup, clones the source repository, runs linting and unit tests, builds the application image, and deploys the application to OpenShift.
+Run cleanup, clone the source repository, perform linting and unit tests, build the application image, and deploy the application.
 
 ### 3. Application Deployment
-
-The application is deployed as `cicd-app` and listens on port 8000.
+Deploy the application as `cicd-app` on port 8000.
 
 ## Verification
+Verify the GitHub Actions workflow, Tekton PipelineRun, OpenShift deployment, and application logs.
 
-The project is verified by checking the GitHub Actions workflow, successful Tekton PipelineRun, OpenShift deployment, and application logs.
-
-## Repository
-
-Project name: ci-cd-final-project
+**Project name:** ci-cd-final-project
