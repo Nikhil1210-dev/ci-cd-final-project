@@ -1,38 +1,40 @@
-# CI/CD Tools and Practices Final Project Template
 
-This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
+# ci-cd-final-project
 
-## Usage
+## Project Overview
 
-This repository is to be used as a template to create your own repository in your own GitHub account. No need to Fork it as it has been set up as a Template. This will avoid confusion when making Pull Requests in the future.
+This project implements a Continuous Integration and Continuous Delivery (CI/CD) pipeline using GitHub Actions, Tekton, and Red Hat OpenShift.
 
-From the GitHub **Code** page, press the green **Use this template** button to create your own repository from this template.
+## Technologies Used
 
-Name your repo: `ci-cd-final-project`.
+- Python
+- Flask
+- Git and GitHub
+- GitHub Actions
+- flake8
+- nose
+- Tekton Pipelines
+- Buildah
+- Red Hat OpenShift
 
-## Setup
+## Project Tasks
 
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
+### 1. Continuous Integration with GitHub Actions
 
-```bash
-bash bin/setup.sh
-```
+The GitHub Actions workflow installs dependencies, runs flake8 linting, and executes unit tests using nose.
 
-Then you must exit the shell and start a new one for the Python virtual environment to be activated.
+### 2. Continuous Delivery with Tekton
 
-```bash
-exit
-```
+The Tekton pipeline performs cleanup, clones the source repository, runs linting and unit tests, builds the application image, and deploys the application to OpenShift.
 
-## Tasks
+### 3. Application Deployment
 
+The application is deployed as `cicd-app` and listens on port 8000.
 
-## License
+## Verification
 
-Licensed under the Apache License. See [LICENSE](/LICENSE)
+The project is verified by checking the GitHub Actions workflow, successful Tekton PipelineRun, OpenShift deployment, and application logs.
 
-## Author
+## Repository
 
-Skills Network
-
-## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
+Project name: ci-cd-final-project
